@@ -1,0 +1,382 @@
+
+/* FONTS */
+@font-face {
+  font-family: Hey;
+  src: url("../police/Hey Comic.ttf");
+}
+
+@font-face {
+  font-family: Adelia;
+  src: url("../police/ADELIA.otf");
+}
+/* STYLES */
+
+body, html, header, h1 {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: Hey;
+}
+
+header, body, html {
+  width: 100%;
+  height: 100%;
+}
+button:hover{
+  background-color: #989c6b;
+}
+
+header {
+  background: url("../img/0.accueil.02.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+h1 {
+  font-family: Hey;
+  color: white;
+  font-size: 33px;
+  text-shadow: rgb(88, 192, 57) 1px 0 10px;
+}
+/* titre jeu du pendu */
+p {
+  font-size: 4rem;
+}
+
+.titre_responsive { 
+  display : flex;
+  flex-direction : column;
+  align-items : center;   
+  justify-content:center;
+  padding-top: 3%;
+  font-family: Hey;
+  font-size: 10px;
+  color: #989c6b; 
+  text-shadow: 1px 1px 10px black;
+}  
+
+
+/* STYLES DIV */
+
+.wrapper {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  text-shadow: 1px 1px 10px black;
+}
+
+
+#contenaireGlobal {
+
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;  
+}
+
+#idContainer {
+  display: table-cell;
+  text-align: center;
+  /* vertical-align: middle; */
+  height: 150px;
+  width: 450px;
+  margin-top: -2%  ;
+  padding: 10% -10% 0 300px;
+  border: 0px solid white;
+}
+
+
+ /* --------- STYLE BUTTON + LABEL --------- */
+
+button {
+
+  font-family: ADELIA;
+  font-size: 25px;
+  color: rgb(233, 240, 235);
+  padding: 10px;
+  margin: 10px;
+  background-color: #788174;
+  border-radius: 20px;
+}
+
+label {
+  font-family: Hey;
+  font-weight: 300;
+  color: rgb(125, 172, 123);
+  font-size: 30px;
+  text-align: left;
+}
+/*  ---------------------------- MEDIA QUERIES --------------------------- */
+
+@media screen and (max-width: 1028px) {
+  /* header {
+    background: url("../img/0.accueil-responsive.1.jpg") no-repeat center center;
+    background-size: cover;  
+  } */
+  h1 {
+    font-family: Hey;
+    color: white;
+    font-size: 30px;
+  }
+
+  p {
+    font-size:70px;
+  }
+
+  label {
+    font-family: Hey;
+    color: whitesmoke;
+    font-size: 25px;
+    text-align: left;
+  }
+
+   #idContainer {
+    margin-top: 15%;
+  }
+  .titre_responsive { 
+    display : flex;
+    flex-direction : column;
+    align-items : center;   
+    justify-content:center;
+    padding-top: 0px;
+    font-family: Hey;
+    font-size: 40px;
+    color: #989c6b;   
+  }
+  label {
+    font-family: Hey;
+    font-weight: 300;
+    color: rgb(230, 240, 230);
+    font-size: 40px;
+    text-align: left;
+  }
+  h1 {
+    font-family: Hey;
+    color: white;
+    font-size: 4rem;
+    text-shadow: rgb(88, 192, 57) 1px 0 10px;
+  }  
+}
+
+/*  ---------------------------- MEDIA QUERIES :: 747px --------------------------- */
+
+@media screen and (max-width: 747px) { 
+  #idContainer {
+    margin-top: 0px;   
+  }
+
+  header {
+    background: url("../img/0.accueil-responsive.1.jpg") no-repeat center center;
+    background-size: cover;  
+  }
+
+  h1 {
+    font-family: Hey;
+    color: white;
+    font-size: 30px;
+  }
+
+  p {
+    font-size:50px;
+  }
+
+  label {
+    font-family: Hey;
+    color: whitesmoke;
+    font-size: 25px;
+    text-align: left;
+  }
+  .titre_responsive { 
+    display : flex;
+    flex-direction : column;
+    align-items : center;   
+    justify-content:center;
+    padding-top: 3%;
+    font-family: Hey;
+    font-size: 10px;
+    color: #989c6b;   
+  }
+  #idContainer {
+    margin-top: 5%;   
+  }  
+}
+/*  ---------------------------- MEDIA QUERIES :: 590px --------------------------- */
+
+ @media screen and (min-width: 590px) and (max-width: 746px)  { 
+  #idContainer {
+    margin-top: 3%;   
+  }
+
+  header {
+    background: url("../img/0.accueil-responsive.1.jpg") no-repeat center center;
+    background-size: cover;  
+  }
+
+  h1 {
+    font-family: Hey;
+    color: white;
+    font-size: 2rem;
+  }
+
+  p {
+    font-size:45px;
+  }
+
+  label {
+    font-family: Hey;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    text-align: left;
+  }
+  .titre_responsive { 
+    display : flex;
+    flex-direction : column;
+    align-items : center;   
+    padding-top: 10%;
+    font-family: Hey;
+    font-size: 3rem;
+    color: #989c6b;   
+  }
+} 
+
+/*  ---------------------------- MEDIA QUERIES :: 409px --------------------------- */
+
+ @media screen and (min-width: 409px) and (max-width: 589px ) { 
+  #idContainer {
+    margin-top: 2%;   
+   
+  }
+
+  header {
+    background: url("../img/0.accueil-responsive.1.jpg") no-repeat center center;
+    background-size: cover;  
+  }
+
+  h1 {
+    font-family: Hey;
+    color: white;
+    font-size: 28px;
+    text-shadow: rgb(88, 192, 57) 1px 0 10px;
+  }
+
+  p {
+    font-size: 3rem;
+  }
+
+  label {
+    font-family: Hey;
+    color: whitesmoke;
+    font-size: 1.9rem;
+    text-align: left;
+  }
+
+  .titre_responsive { 
+    display : flex;
+    flex-direction : column;
+    align-items : center;   
+    padding-top: 15%;
+    font-family: Hey;
+    font-size: 2rem;
+    color: #989c6b; 
+  }
+} 
+
+/*  ---------------------------- MEDIA QUERIES :: 308px --------------------------- */
+
+ @media screen and (min-width: 308px) and (max-width: 408px) { 
+  #idContainer {
+    margin: 0%; 
+    
+  }
+  
+
+  header {
+    background: url("../img/0.accueil-responsive.1.jpg") no-repeat center center;
+    background-size: cover;  
+  }
+  h1 {
+    font-family: Hey;
+    color: white;
+    font-size: 26px;
+  }
+
+  p {
+    font-size: 30px;
+  }
+
+  label {
+    font-family: Hey;
+    color: whitesmoke;
+    font-size: 1.9rem;
+    text-align: left;
+  }
+
+  .titre_responsive { 
+    display : flex;
+    flex-direction : column;
+    align-items : center;   
+    padding-top: 40%;
+    font-family: Hey;
+    font-size: 28px;
+    color: #989c6b; 
+  }
+  
+} 
+
+/*  ---------------------------- MEDIA QUERIES :: 308px --------------------------- */
+
+@media screen and (min-width: 220px) and (max-width: 307px) { 
+  #idContainer {
+    margin-top: 0%;  
+  }
+  
+
+  header {
+    background: url("../img/0.accueil-responsive.1.jpg") no-repeat center center;
+    background-size: cover;  
+  }
+  h1 {
+    font-family: Hey;
+    color: white;
+    font-size: 0.9rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  label {
+    font-family: Hey;
+    color: whitesmoke;
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .titre_responsive { 
+    display : flex;
+    flex-direction : column;
+    align-items : center;   
+    padding-top: 15%;
+    font-family: Hey;
+    font-size: 1rem;
+    color: #989c6b; 
+  }
+  
+button {
+
+  font-family: ADELIA;
+  font-size: 1rem;
+  color: rgb(233, 240, 235);
+  padding: 0.8rem;
+  margin: 0.8rem;
+  background-color: #788174;
+  border-radius: 7px;
+}  
+} 

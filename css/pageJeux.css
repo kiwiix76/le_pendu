@@ -1,0 +1,442 @@
+/* FONTS */
+@font-face {
+  font-family: Hey;
+  src: url("../police/Hey Comic.ttf");
+}
+
+@font-face {
+  font-family: Adelia;
+  src: url("../police/ADELIA.otf");
+}
+
+#timer{
+  font-family: Hey;
+  position:relative;
+  bottom: 12em;
+  left: 1em;
+  color:antiquewhite;
+  text-shadow:black 4px;
+  font-size: 2rem;
+  }
+
+/* STYLES */
+
+body, html, header, h1 {
+    margin: 0px;
+    padding: 0px;
+  }
+
+header, body, html {
+    width: 100%;
+    height: 100%;
+}
+#divFond {
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+
+article{
+    background-color: #94b486;
+    opacity: 0.9;
+    border-radius: 7px;    
+    margin-top: 250px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+main{
+  width:40vw;
+  height:10vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.toucheClavier{
+    height: 30px;
+    width:30px;
+    border : 1px dashed white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Hey;
+    color:white;
+    font-size: 20px;
+}
+
+.ligne{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+}
+
+/* Resultat + clavier */
+.container {
+  margin-top: 0%;
+  margin-left: 12%;
+  border: 0px solid white;
+}
+
+#mot_a_trouver{
+  margin-top: 0;
+  padding-top: 0%;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+}
+
+.lettreATrouver {
+  font-family: Hey;
+  font-size: 1.6rem;
+  color:white;
+  margin-left: 0%;
+  
+}
+
+.motDiv {
+  margin-top: 30px;
+}
+#clavierVirtuel {
+  margin-top: 5%;
+  
+}
+#tentative {
+  font-family: Hey;
+  font-size: 1.6rem;
+  color:white;
+  margin-left: 18%;
+  
+}
+.claVirtuel {
+  margin-top: 0;
+}
+
+/* titre jeu du pendu */
+p {
+  font-size: 4rem;
+}
+
+.titre_responsive { 
+  display : flex;
+  flex-direction : column;
+  align-items : center;   
+  justify-content:center;
+  padding-top: 3%;
+  font-family: Hey;
+  font-size: 10px;
+  color: #989c6b; 
+  text-shadow: 1px 1px 10px black;
+}  
+/*  ---------------------------- MEDIA QUERIES --------------------------- */
+
+@media screen and (max-width: 1028px) {
+  /* header {
+    background: url("../img/0.accueil-responsive.1.jpg") no-repeat center center;
+    background-size: cover;  
+  } */
+  h1 {
+    font-family: Hey;
+    color: white;
+    font-size: 30px;
+  }
+
+  /* p {
+    font-size:70px;
+  } */
+
+  label {
+    font-family: Hey;
+    color: whitesmoke;
+    font-size: 25px;
+    text-align: left;
+  }
+
+   #idContainer {
+    margin-top: 15%;
+  }
+  .titre_responsive { 
+    display : flex;
+    flex-direction : column;
+    align-items : center;   
+    justify-content:center;
+    padding-top: 0px;
+    font-family: Hey;
+    font-size: 40px;
+    color: #989c6b;   
+  }
+}
+
+/*  ---------------------------- MEDIA QUERIES :: 747px --------------------------- */
+
+@media screen and (max-width: 747px) { 
+  #idContainer {
+    margin-top: 0px;   
+  }
+
+  header {
+    background: url("../img/0.accueil-responsive.1.jpg") no-repeat center center;
+    background-size: cover;  
+  }
+
+  h1 {
+    font-family: Hey;
+    color: white;
+    font-size: 30px;
+  }
+
+  p {
+    font-size:50px;
+  }
+
+  label {
+    font-family: Hey;
+    color: whitesmoke;
+    font-size: 25px;
+    text-align: left;
+  }
+  .titre_responsive { 
+    display : flex;
+    flex-direction : column;
+    align-items : center;   
+    justify-content:center;
+    padding-top: 3%;
+    font-family: Hey;
+    font-size: 10px;
+    color: #989c6b;   
+  }
+  #idContainer {
+    margin-top: 5%;   
+  }  
+}
+/*  ---------------------------- MEDIA QUERIES :: 590px --------------------------- */
+
+ @media screen and (min-width: 590px) and (max-width: 746px)  { 
+  #idContainer {
+    margin-top: 3%;   
+  }
+
+  header {
+    background: url("../img/0.accueil-responsive.1.jpg") no-repeat center center;
+    background-size: cover;  
+  }
+
+  h1 {
+    font-family: Hey;
+    color: white;
+    font-size: 2rem;
+  }
+
+  p {
+    font-size:45px;
+  }
+
+  label {
+    font-family: Hey;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    text-align: left;
+  }
+  .titre_responsive { 
+    display : flex;
+    flex-direction : column;
+    align-items : center;   
+    padding-top: 10%;
+    font-family: Hey;
+    font-size: 3rem;
+    color: #989c6b;   
+  }
+
+  
+} 
+
+/*  ---------------------------- MEDIA QUERIES :: 409px --------------------------- */
+
+ @media screen and (min-width: 409px) and (max-width: 589px ) { 
+  #idContainer {
+    margin-top: 2%;   
+   
+  }
+
+  header {
+    background: url("../img/0.accueil-responsive.1.jpg") no-repeat center center;
+    background-size: cover;  
+  }
+  h1 {
+    font-family: Hey;
+    color: white;
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 30px;
+  }
+
+  label {
+    font-family: Hey;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    text-align: left;
+  }
+
+  .titre_responsive { 
+    display : flex;
+    flex-direction : column;
+    align-items : center;   
+    padding-top: 15%;
+    font-family: Hey;
+    font-size: 2rem;
+    color: #989c6b; 
+  }
+} 
+
+/*  ---------------------------- MEDIA QUERIES :: (min-width: 308px) and (max-width: 408px) --------------------------- */
+
+ @media screen and (min-width: 308px) and (max-width: 408px) { 
+  #idContainer {
+    margin-top: 2%;  
+  }
+  
+#divFond {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width:100%;
+}
+  
+  header {
+    background: url("../img/0.accueil-responsive.1.jpg") no-repeat center center;
+    background-size: cover;  
+  }
+  h1 {
+    font-family: Hey;
+    color: white;
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 30px;
+  }
+
+  label {
+    font-family: Hey;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    text-align: left;
+  }
+
+  .titre_responsive { 
+    display : flex;
+    flex-direction : column;
+    align-items : center;   
+    padding-top: 5%;
+    font-family: Hey;
+    font-size: 25px;
+    color: #989c6b; 
+  }
+  /* ffff */
+  main{
+    width:60%;
+    height:10vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    margin-left: 2px;
+  }
+.claVirtuel {
+
+  margin-top: 0;
+}
+
+/* element qui contient les lettres */
+.container {
+  margin-top: 0%;
+  margin-left: 20%;
+  border: 0px solid white;
+}
+
+.toucheClavier{
+  height: 100%;
+  width:100%;
+  border : 1px dashed white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Hey;
+  color:white;
+  font-size: 1.5rem;
+  margin:2px;
+  padding: 0 3px 0 0px;
+  
+}
+article{
+  border : 1px dashed white;
+  background-color: #94b486;
+  opacity: 0.9;
+  border-radius: 7px;    
+  margin-top: 250px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  width: 100%;
+}
+#tentative {
+  border : 1px dashed white;
+  margin:0 20px 20px 0;
+  padding-left: 20px;
+  text-align: center;
+}
+  
+} 
+
+/*  ---------------------------- MEDIA QUERIES :: 308px --------------------------- */
+
+@media screen and (min-width: 220px) and (max-width: 307px) { 
+  #idContainer {
+    margin-top: 0%;  
+  }
+  
+
+  header {
+    background: url("../img/0.accueil-responsive.1.jpg") no-repeat center center;
+    background-size: cover;  
+  }
+  h1 {
+    font-family: Hey;
+    color: white;
+    font-size: 0.9rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  label {
+    font-family: Hey;
+    color: whitesmoke;
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .titre_responsive { 
+    display : flex;
+    flex-direction : column;
+    align-items : center;   
+    padding-top: 15%;
+    font-family: Hey;
+    font-size: 1rem;
+    color: #989c6b; 
+  }
+  
+button {
+
+  font-family: ADELIA;
+  font-size: 1rem;
+  color: rgb(233, 240, 235);
+  padding: 0.8rem;
+  margin: 0.8rem;
+  background-color: #788174;
+  border-radius: 7px;
+}
+  
+} 
